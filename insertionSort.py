@@ -1,6 +1,7 @@
 #running time: O of n^2, ok for n < 30 or if you only need to run couple times overnight
 
 myList = [5,10,4,7,6]
+print(myList)
 #index for the unsorted part of the array
 for j in range(1,len(myList)):
     #1st element of the unsorted array
@@ -14,3 +15,5 @@ for j in range(1,len(myList)):
         i -= 1
     #assign key to the position 1 greater than i since i will represent the index of the last element smaller than key
     myList[i+1] = key
+    print("after",j, "iterations:", myList)
+print(myList)
